@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="palju.MainPage" BackgroundColor="Black"
+             Title="Поздравление другу">
+
+    <StackLayout x:Name="stacklayout" VerticalOptions="CenterAndExpand" BackgroundColor="Yellow">
+        <Picker TextColor="Black" Title="Выбрать почту" x:Name="pickert" SelectedIndexChanged="picker_SelectedIndexChanged">
+            <Picker.Items>
+                <x:String>
+                    shakshak@gmail.com
+                </x:String>
+                <x:String>
+                    bndon@gmail.com
+                </x:String>
+                <x:String>
+                    suslik123@gmail.com
+                </x:String>
+                <x:String>
+                    gghupm@gmail.com
+                </x:String>
+                <x:String>
+                    tiktik123@gmail.com
+                </x:String>
+            </Picker.Items>
+        </Picker>
+        <Entry Placeholder="Тема сообщения" x:Name="EntrySubject" TextColor="Red"></Entry>
+        <Picker TextColor="Black" Title="Выбрать поздравление" x:Name="picker" SelectedIndexChanged="picker_SelectedIndexChanged">
+            <Picker.Items>
+                <x:String>
+                    С днём мамы!
+                </x:String>
+                <x:String>
+                    Поздравляю с 8 марта!
+                </x:String>
+                <x:String>
+                    Поздравляю с новосельем!
+                </x:String>
+                <x:String>
+                    Поздравляю с новорожденным!
+                </x:String>
+                <x:String>
+                    Поздравляю с покупкой машины!
+                </x:String>
+            </Picker.Items>
+        </Picker>
+        <Button Text="Рандом" x:Name="randombutton" Clicked="randombutton_Clicked" BackgroundColor="Yellow"></Button>
+        <Button Text="Отправить" x:Name="ButtonSend" Clicked="ButtonSend_Clicked" BackgroundColor="Yellow"></Button>
+    </StackLayout>
+</ContentPage>
